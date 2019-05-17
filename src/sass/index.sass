@@ -1,0 +1,189 @@
+@import "./colors"
+@import "./main"
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: 'Roboto', sans-serif
+
+.core-title
+    font-size: 80px
+    color: $black
+    text-align: center
+    display: block
+    position: relative
+    padding: 0 0 35px
+    margin: 0 0 35px
+
+    &:after
+        content: ' '
+        width: 100px
+        height: 15px
+        border-radius: 10px
+        background-color: #fdf2dc
+        display: block
+        position: absolute
+        bottom: -5px
+        left: calc(50% - 50px)
+
+.rounded
+    background: #000
+    position: relative
+    padding: 20px 0 80px
+
+    p
+        font-family: Roboto
+        font-size: 20px
+        text-align: justify
+        color: #fdf2dc
+
+    h1
+        @extend .core-title
+
+    &:before
+        content: ' '
+        position: absolute
+        display: block
+        width: 100%
+        height: 100px
+        background: #000
+        top: -80px
+        border-top-left-radius: 50%
+        border-top-right-radius: 50%
+
+.about
+    background: $orange-two
+
+    p
+        display: block
+        max-width: 900px
+        width: 100%
+        padding: 20px
+        margin: 0 auto
+
+    .ccrp
+        height: 320px
+        width: 100%
+        background: url(/assets/images/ccrp.svg)
+        background-repeat: no-repeat
+        background-size: 55%
+        opacity: 0.2
+        background-position: center 45%
+
+    &:before
+        background: $orange-two
+
+.keynote
+    background: $orange-three
+
+    &:before
+        background: $orange-three
+
+    .keynoter
+        display: grid
+        padding: 15px 60px 55px
+        align-items: center
+        grid-column-gap: 30px
+
+        &:last-child
+            padding-bottom: 0px
+
+        & > .photo
+            border-radius: 50%
+            height: 280px
+            background-size: contain
+            background-position: center center
+
+        & > .content
+            & > h3
+                font-weight: 300
+                margin-bottom: 20px
+
+            & > p
+                font-size: 18px
+
+        &:nth-child(even)
+            grid-template-columns: 280px auto 15%
+
+        &:nth-child(odd)
+            grid-template-columns: 15% auto 280px
+
+            & > .content
+                grid-column: 2
+                grid-row: 1
+                text-align: right
+
+            & > .photo
+                grid-column: 3
+                grid-row: 1
+
+
+.footer
+    background: $black
+
+    &:before
+        background: $black
+
+.sponsors
+    h1
+        @extend .core-title
+        padding-top: 60px
+
+        &:after
+            background-color: #f1ba91
+
+    & > .sponsor-section
+        & > div
+            width: 100%
+            padding: 20px
+
+            .signal
+                background: #28223e
+                width: 130px
+                height: 130px
+                margin: 0 auto
+                display: flex
+                flex-direction: column
+                justify-items: center
+                justify-content: center
+                align-items: center
+                border: 2px solid #000
+                border-radius: 50%
+
+                & > svg
+                    width: 55%
+                    display: block
+                    margin: 0 auto 20px
+
+            .platina
+                color: #b0bec5
+                border-color: #b0bec5
+
+                & > svg path
+                    fill: #b0bec5!important
+
+            .ouro
+                color: #f5cc7d
+                border-color: #f5cc7d
+
+                & > svg path
+                    fill: #f5cc7d!important
+
+            .prata
+                color: #eceff1
+                border-color: #eceff1
+
+                & > svg path
+                    fill: #eceff1!important
+
+            &:nth-child(1)
+                background: $yellow
+
+            &:nth-child(2)
+                background: $yellow-two
+
+            &:nth-child(3)
+                background: $yellow-three
+                padding-bottom: 80px
+

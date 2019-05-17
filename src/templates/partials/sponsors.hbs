@@ -1,0 +1,15 @@
+<div class="sponsors">
+    <div class="sponsor-section">
+        {{#each sponsors.sponsors}}
+            <div>
+                {{#if title}}
+                    <h1> {{ title }}</h1>
+                {{/if}}
+                <div class="signal {{type}}">
+                    {{>pylogo }}
+                    <div>{{type}}</div>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

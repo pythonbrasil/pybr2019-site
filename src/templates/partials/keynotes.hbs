@@ -1,0 +1,11 @@
+<div class="rounded keynote">
+    <h1> Keynotes </h1>
+    {{#each keynotes}}
+        <div class="keynoter">
+            <div class="photo" style="background-image: url('/assets/images/keynotes/{{meta.photo}}')"></div>
+            <div class="content">
+                {{{ html }}}
+            </div>
+        </div>
+    {{/each}}
+</div>
