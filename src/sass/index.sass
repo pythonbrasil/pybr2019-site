@@ -125,6 +125,51 @@
     &:before
         background: $black
 
+    & > div
+        max-width: 900px
+        width: 100%
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 50% 50%
+
+    .nav
+        & > ul
+            float: left
+            list-style: none
+            padding: 0
+            margin-right: 60px
+
+            & > .header
+                color: $orange
+                font-size: 28px
+                font-weight: 600
+
+            & > .item
+                margin-top: 5px
+
+                &:first-child
+                    margin-top: 25px
+
+                & > a
+                    text-decoration: none
+                    color: #fbf3e4
+
+
+        &:after
+            content: ' '
+            display: block
+            clear: both
+
+    .button
+        background: $orange
+        padding: 15px
+        color: $black
+        font-size: 25px
+        display: block
+        text-align: center
+        border-radius: 50px
+        text-decoration: none
+
 .sponsors
     h1
         @extend .core-title
