@@ -1,7 +1,7 @@
 ---
 photo: betina.jpg
-social: /xxxxx
-twitter: /xxxxx
+social: ''
+twitter: www.twitter.com
 ---
 
 ## Bettina Empiricus

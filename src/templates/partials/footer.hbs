@@ -18,18 +18,23 @@
             <a href='' class="button">
                 Adquira seu Ingresso
             </a>
+
+            {{#each footer.social}}
+            <a href="{{link}}">
+              <div class="image-logo" style="background-image: url('{{logo}}')"></div>
+            </a>
+            {{/each}}
+
             <a>
 
             </a>
             <a>
-                
-            </a>
-            <a>
-                
+
             </a>
         </div>
-        <div class="copyright">
-            
-        </div>
+    </div>
+    <div class="copyright">
+        <p>PythonBrasil is a non-profit volunteer-driven conference for promoting the open-source Python programming language. It is supported by the Brazilian Python Association (APyB) and by the Python Software Foundation (PSF).</p>
+        <p>Google Play e o logotipo do Google Play são marcas registradas da Google LLC.</p>
     </div>
 </footer>

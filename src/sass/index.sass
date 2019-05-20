@@ -41,6 +41,10 @@
     h1
         @extend .core-title
 
+    h2
+        @extend .core-title
+        font-size: 45px
+
     &:before
         content: ' '
         position: absolute
@@ -51,6 +55,13 @@
         top: -80px
         border-top-left-radius: 50%
         border-top-right-radius: 50%
+.soon
+  min-height: 200px
+  > p
+    text-align: center
+    font-size: 18px
+
+
 
 .about
     background: $orange-two
@@ -61,6 +72,7 @@
         width: 100%
         padding: 20px
         margin: 0 auto
+        text-align: center
 
     .ccrp
         height: 320px
@@ -73,6 +85,11 @@
 
     &:before
         background: $orange-two
+.lineup
+  background: $orange-three
+
+  &:before
+      background: $orange-three
 
 .keynote
     background: $orange-three
@@ -170,15 +187,85 @@
         border-radius: 50px
         text-decoration: none
 
+    .copyright
+      margin: 40px auto
+      display: block
+      > p
+        text-align: center
+        font-size: 12px
+        margin-bottom: 10px
+
+.prefooter
+    background: #fbf3e4
+    min-height: 60px
+
+    &:before
+        background: #fbf3e4
+
+
 .sponsors
+    background: $orange
+    padding-bottom: 0
+
+    &:before
+        background: $orange
+
+    .sponsor-action
+      text-align: center
+      position: relative
+      height: 110px
+
+      > p
+        font-size: 40px
+        font-weight: bold
+        text-transform: uppercase
+        color: #fdf2dc
+        text-align: center
+        margin: 0 auto
+
+      .button
+          background: $blue-two
+          padding: 15px
+          color: white
+          font-size: 25px
+          display: block
+          text-align: center
+          border-radius: 50px
+          text-decoration: none
+          max-width: 430px
+          margin: 0 auto
+          position: absolute
+          top: 80px
+          left: 0
+          right: 0
+
+
     h1
         @extend .core-title
         padding-top: 60px
 
         &:after
             background-color: #f1ba91
+    h2
+        &:after
+            background-color: #f1ba91
+
 
     & > .sponsor-section
+        background: $yellow
+
+        .partners
+          position: relative
+          > hr
+            height: 4px
+            background: #28223e
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            width: 500px
+            margin: 0 auto
+
         & > div
             width: 100%
             padding: 20px
@@ -187,7 +274,7 @@
                 background: #28223e
                 width: 130px
                 height: 130px
-                margin: 0 auto
+                margin: 0 auto 30px auto
                 display: flex
                 flex-direction: column
                 justify-items: center
@@ -232,3 +319,10 @@
                 background: $yellow-three
                 padding-bottom: 80px
 
+            > .sponsor-entity
+              text-align: center
+              margin: 40px auto
+
+              > img
+                min-height: 50px
+                max-height: 200px

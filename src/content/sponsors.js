@@ -7,29 +7,20 @@ module.exports = {
     sponsors: [
         {
             title: 'Patrocinadores',
-            type: 'platina',
-            items: [
-                Entity('Foo', 'placeholder.png', '/sponsor-test'),
-                Entity('Bar', 'placeholder.png', '/sponsor-test'),
-            ],
-        },
-        {
-            type: 'ouro',
-            items: [
-                Entity('Fizz', 'placeholder.png', '/sponsor-test'),
-                Entity('Fuzz', 'placeholder.png', '/sponsor-test'),
-            ],
-        },
-        {
             type: 'prata',
             items: [
-                Entity('Zoom', 'placeholder.png', '/sponsor-test'),
-                Entity('Zaam', 'placeholder.png', '/sponsor-test'),
+                Entity('Evolux', 'evolux.png', '')
             ],
         }
     ],
     partners: [
-        Entity('FooBar', 'placeholder.png', '/sponsor-test'),
+      {
+        title: 'Parceiros',
+        items: [
+          Entity('associação python brasil', 'apyb.png', 'https://python.org.br/'),
+
+        ]
+      }
     ],
     organization: [
         Entity('FizzFuzz', 'placeholder.png', '/sponsor-test'),

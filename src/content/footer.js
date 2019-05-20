@@ -1,23 +1,26 @@
 module.exports = {
     nav: [
         {
-            title: 'FooBar',
+            title: 'Parceiros',
             items: [
-                { text: 'Foo', link: '/foo' },
-                { text: 'Bar', link: '/bar' },
+                { text: 'Local', link: '#section-main' },
+                { text: 'Keynote', link: '#section-keynote' },
+                { text: 'Evento', link: '#section-about' },
+                { text: 'Programação', link: '#' },
+                { text: 'Código de Contuda', link: '#' },
             ]
         },
         {
-            title: 'FizzFuzz',
+            title: 'Patrocínio',
             items: [
-                { text: 'Fizz', link: '/fizz' },
-                { text: 'Fuzz', link: '/fuzz' },
+                { text: 'Quero Patrocinar', link: '#' },
+                { text: 'Patrocinadores', link: '#section-sponser' },
             ]
         },
     ],
     social: {
-        facebook: '',
-        twitter: '',
-        apybr: '',
+        facebook: { link: '#', logo: '/images/facebook.svg' },
+        twitter: { link: '#', logo: '/images/twitter.svg' },
+        apybr: { link: '#', logo: '/images/pylogo.svg' }
     }
 }
