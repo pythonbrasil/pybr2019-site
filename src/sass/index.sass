@@ -94,6 +94,12 @@
   &:before
       background: $orange-three
 
+  h1
+    font-size: 40px
+
+    @media screen and (min-width: 500px)
+        font-size: 80px
+
 .keynote
     background: $orange-three
 
@@ -156,18 +162,47 @@
             display: grid
             grid-template-columns: 50% 50%
 
+    .social
+        text-align: center
+        grid-row: 1
+        grid-column: 2
+
+        & > .social-icons
+            margin-right: 20px
+            text-decoration: none
+
+            &:last-child
+                margin-right: 0
+
+            & > svg
+                width: 60px
+                margin-top: 20px
+                fill: #fbf3e4
+
+            path
+                fill: #fbf3e4!important
     .nav
+        grid-row: 1
+        grid-column: 1
+
         & > ul
-            float: left
             list-style: none
             padding: 0
-            margin-right: 60px
+            text-align: center
+
+            @media screen and (min-width: 896px)
+                text-align: left
+                float: left
+                margin-right: 60px
 
             & > .header
                 color: $orange
                 font-size: 28px
                 font-weight: 600
                 margin-top: 30px
+
+                @media screen and (min-width: 896px)
+                    margin-top: 0px
 
             & > .item
                 margin-top: 5px
