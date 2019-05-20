@@ -1,4 +1,11 @@
-<div class="sponsors">
+<div class="rounded sponsors" id="section-sponser">
+    <div class="sponsor-action">
+      <p>A maior conferência de Python da América Latina</p>
+
+      <a href="#" class="button">
+          Quero patrocinar
+      </a>
+    </div>
     <div class="sponsor-section">
         {{#each sponsors.sponsors}}
             <div>
@@ -9,7 +16,29 @@
                     {{>pylogo }}
                     <div>{{type}}</div>
                 </div>
+                {{#each items}}
+                    <div class="sponsor-entity">
+                        <img src="{{photo}}" alt="{{name}}">
+                    </div>
+                {{/each}}
             </div>
         {{/each}}
+
+        <div class="partners">
+          <hr>
+          {{#each sponsors.partners}}
+            {{#if title}}
+                <h2> {{ title }}</h2>
+            {{/if}}
+            {{#each items}}
+                <div class="sponsor-entity">
+                    <img src="{{photo}}" alt="{{name}}">
+                </div>
+            {{/each}}
+
+          {{/each}}
+        </div>
+
+
     </div>
 </div>
