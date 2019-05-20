@@ -8,13 +8,16 @@
     font-family: 'Roboto', sans-serif
 
 .core-title
-    font-size: 80px
+    font-size: 55px
     color: $black
     text-align: center
     display: block
     position: relative
     padding: 0 0 35px
     margin: 0 0 35px
+
+    @media screen and (min-width: 500px)
+        font-size: 80px
 
     &:after
         content: ' '
@@ -138,6 +141,7 @@
 
 .footer
     background: $black
+    padding: 0 0 20px
 
     &:before
         background: $black
@@ -146,8 +150,11 @@
         max-width: 900px
         width: 100%
         margin: 0 auto
-        display: grid
-        grid-template-columns: 50% 50%
+        padding: 20px
+
+        @media screen and (min-width: 896px)
+            display: grid
+            grid-template-columns: 50% 50%
 
     .nav
         & > ul
@@ -160,6 +167,7 @@
                 color: $orange
                 font-size: 28px
                 font-weight: 600
+                margin-top: 30px
 
             & > .item
                 margin-top: 5px
@@ -188,12 +196,16 @@
         text-decoration: none
 
     .copyright
-      margin: 40px auto
-      display: block
-      > p
-        text-align: center
-        font-size: 12px
-        margin-bottom: 10px
+        display: block
+        margin: 20px auto
+
+        > p
+            text-align: center
+            font-size: 12px
+            margin-bottom: 10px
+
+        @media screen and (min-width: 896px)
+            margin: 40px auto
 
 .prefooter
     background: #fbf3e4
@@ -243,6 +255,7 @@
     h1
         @extend .core-title
         padding-top: 60px
+        font-size: 40px
 
         &:after
             background-color: #f1ba91
@@ -263,8 +276,11 @@
             top: 0
             left: 0
             right: 0
-            width: 500px
             margin: 0 auto
+            width: 230px
+
+            @media screen and (min-width: 550px)
+                width: 500px
 
         & > div
             width: 100%
