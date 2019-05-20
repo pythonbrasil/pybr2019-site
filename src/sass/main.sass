@@ -21,10 +21,21 @@
         cursor: pointer
         z-index: 10px
 
+        &.close > .hamburguer
+            background: transparent
+
+            &:after
+                top: 0px
+                transform: rotateZ(-45deg)
+
+            &:before
+                top: 0px
+                transform: rotateZ(45deg)
+
         .hamburguer
             height: 4px
             margin: 0 auto
-            background: #FFF
+            background: #fdf2dc
             width: 20px
             position: relative
             top: calc(50% - 2px)
@@ -34,7 +45,7 @@
                 position: absolute
                 height: 4px
                 width: 20px
-                background: #FFF
+                background: #fdf2dc
 
             &:after
                 top: -8px
@@ -192,10 +203,18 @@
             background: $black
             display: none
 
+            &.active
+                display: block
+
             & > ul
                 list-style: none
 
-                & > li > a
+                & > li
+                    font-size: 40px
+                    text-align: center
+                    padding: 40px
+
+                    & > a
                         text-decoration: none
                         padding: 0 20px
                         color: $yellow-three

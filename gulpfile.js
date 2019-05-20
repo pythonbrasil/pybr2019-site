@@ -1,11 +1,10 @@
 const gulpStatic = require('gulp-static-gen');
+const gulp = require('gulp');
 const fs = require('fs');
 const path = require('path');
 const set = require('lodash.set');
 
 const { Converter } = require('showdown');
-
-
 
 const data = {};
 
@@ -39,7 +38,14 @@ const loadData = (folderPath, objectPaths = []) => {
 
 loadData('src/content')
 
+gulp.task('content', () => {
+    loadData('src/content')
+});
+
 gulpStatic({
+    customWatchers: [
+        { files: './src/content/**/*', tasks: ['content', 'handlebars'] }
+    ],
     css: {
         input: './src/sass/index.sass',
         output: './dist/assets/css',

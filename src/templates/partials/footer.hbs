@@ -1,21 +1,17 @@
 <footer class="rounded footer">
     <div>
         <div class="social">
-            <a href='' class="button">
+            <a href='{{footer.buyTicketLink}}' class="button">
                 Adquira seu Ingresso
             </a>
-
-            {{#each footer.social}}
-            <a href="{{link}}">
-              <div class="image-logo" style="background-image: url('{{logo}}')"></div>
+            <a class="social-icons" href='{{footer.social.apybr}}'>
+                {{> svgs/pylogo }}
             </a>
-            {{/each}}
-
-            <a>
-
+            <a class="social-icons" href='{{footer.social.facebook}}'>
+                {{> svgs/facebook }}
             </a>
-            <a>
-
+            <a class="social-icons" href='{{footer.social.twitter}}'>
+                {{> svgs/instagram }}
             </a>
         </div>
         <div class="nav">
