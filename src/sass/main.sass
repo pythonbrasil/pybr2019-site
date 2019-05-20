@@ -1,37 +1,85 @@
 .main
     background: $orange
     min-height: 650px
-    display: grid
-    grid-template-columns: 400px auto
-    grid-template-rows: 40px 400px auto
-    padding: 30px 80px 130px
     position: relative
 
-    & > .pylogo-main
-      z-index: 999
-      width: 100px
-      margin: 0 auto
-      position: absolute
-      left: 230px
-      top: 220px
+    .pylogo-main
+        position: absolute
+        top: calc(50% - 50px)
+        left: calc(50% - 50px)
+        width: 100px
+        z-index: 4
+
+    .nav-mobile
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background: $black
+        position: fixed
+        right: 20px
+        top: 20px
+        cursor: pointer
+        z-index: 10px
+
+        .hamburguer
+            height: 4px
+            margin: 0 auto
+            background: #FFF
+            width: 20px
+            position: relative
+            top: calc(50% - 2px)
+
+            &:before, &:after
+                content: ' '
+                position: absolute
+                height: 4px
+                width: 20px
+                background: #FFF
+
+            &:after
+                top: -8px
+
+            &:before
+                top: 8px
+
+        @media screen and (min-width: 1150px)
+            display: none
+
+    @media screen and (min-width: 1150px)
+        display: grid
+        grid-template-columns: 400px auto
+        grid-template-rows: 40px 400px auto
+        padding: 30px 80px 130px
 
     & > .dino
         width: 450px
         background: url(/assets/images/dinosaur.svg)
         bottom: 0
         right: 0
-        background-position: 45% 20%
+        background-position: -50% 20%
         position: absolute
-        height: 350px
         background-size: 115%
         opacity: 0.35
+        height: 300px
+
+        @media screen and (min-width: 500px)
+            height: 350px
 
     & > .call
         grid-column: 2
         grid-row: 2
-        max-width: 500px
-        padding-left: 40px
-        padding-top: 50px
+        width: 100%
+        padding: 20px
+        max-width: 375px
+        padding-top: 90px
+
+        @media screen and (min-width: 500px)
+            padding-top: 20px
+
+        @media screen and (min-width: 1150px)
+            max-width: 500px
+            padding-left: 40px
+            padding-top: 50px
 
         & > div
             display: grid
@@ -39,20 +87,28 @@
 
             & > .main-name
                 grid-column: 1 / 3
-                font-size: 125px
                 font-weight: 700
                 color: #fdf2dc
                 text-align: center
-                line-height: 105px
+                font-size: 75px
+                line-height: 65px
+
+                @media screen and (min-width: 1150px)
+                    font-size: 125px
+                    line-height: 105px
 
             & > .second-name
                 grid-row: 2
                 grid-column: 2
-                font-size: 90px
                 font-weight: 700
                 color: #fdf2dc
                 text-align: right
-                line-height: 70px
+                font-size: 50px
+                line-height: 40px
+
+                @media screen and (min-width: 1150px)
+                    line-height: 70px
+                    font-size: 90px
 
             & > .date
                 display: grid
@@ -60,48 +116,64 @@
                 grid-template-rows: 60px 30px 30px 70px
 
                 & > .first-date
-                    font-size: 80px
                     font-weight: 600
                     color: #28223e
                     align-self: flex-start
-                    line-height: 62px
+                    font-size: 60px
+
+                    @media screen and (min-width: 1150px)
+                        line-height: 62px
+                        font-size: 80px
 
                 & > .second-date
-                    font-size: 80px
-                    font-weight: 600
                     color: #28223e
                     grid-row: 1 / 3
                     grid-column: 2
                     align-self: flex-end
-                    line-height: 62px
                     text-align: center
+                    font-size: 60px
+                    line-height: 48px
+                    font-weight: 600
+
+                    @media screen and (min-width: 1150px)
+                        font-size: 80px
+                        line-height: 62px
 
                 & > .year
-                    font-size: 65px
                     font-weight: 700
                     color: #28223e
                     align-self: flex-end
-                    line-height: 62px
                     justify-self: right
                     grid-column: 1 / 3
                     padding-right: 10px
+                    font-size: 60px
+
+                    @media screen and (min-width: 1150px)
+                        font-size: 65px
+                        line-height: 62px
 
                 & > .conexion-label
-                    font-size: 35px
                     text-align: right
-                    line-height: 22px
                     align-self: flex-end
                     color: #fdf2dc
+                    font-size: 25px
+                    line-height: 25px
+
+                    @media screen and (min-width: 1150px)
+                        font-size: 35px
+                        line-height: 22px
 
                 & > .month-label
                     grid-column: 1 / 3
                     justify-self: right
                     padding-right: 15px
-                    font-size: 35px
                     text-align: right
-                    line-height: 22px
                     align-self: flex-end
                     color: #fdf2dc
+
+                    @media screen and (min-width: 1150px)
+                        font-size: 35px
+                        line-height: 22px
     & > .sun
         grid-row: 2
         grid-column: 1
@@ -111,31 +183,49 @@
         grid-column: 2
 
         & > .header
-            list-style: none
+            position: fixed
+            top: 0
+            bottom: 0
+            z-index: 5
+            width: 100%
+            border-radius: 0
             background: $black
-            line-height: 40px
-            float: right
-            border-radius: 50px
-            padding: 0 20px
+            display: none
 
             & > ul
                 list-style: none
 
-                & > li
-                    display: inline-block
-                    vertical-align: top
-
-                    & > a
+                & > li > a
                         text-decoration: none
                         padding: 0 20px
                         color: $yellow-three
 
+            @media screen and (min-width: 1150px)
+                max-width: 490px
+                display: block
+                position: relative
+                grid-row: 1
+                grid-column: 2
+                list-style: none
+                line-height: 40px
+                float: right
+                border-radius: 50px
+                padding: 0 20px
+
+                & > ul > li
+                    display: inline-block
+                    vertical-align: top
+
 .sun
+    display: none
     background: #f4ad77
     width: 400px
     height: 400px
     position: relative
     border-radius: 50%
+
+    @media screen and (min-width: 1150px)
+        display: block
 
     &:before
         content: ' '
