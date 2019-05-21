@@ -85,13 +85,20 @@
 
 .about
     background: $orange-two
+    padding-bottom: 200px
 
     .signal
       z-index: 4
       position: absolute
-      right: 10%
-      width: 200px
-      height: 200px
+      right: 0
+      left: 0
+      width: 150px
+      height: 150px
+      @media screen and (min-width: 1024px)
+          right: 10%
+          left: auto
+          width: 200px
+          height: 200px
       > a
         display: block
         padding: 8px
@@ -116,13 +123,22 @@
             padding: 16px
 
     .ccrp
-        height: 320px
+        position: absolute
+        bottom: 0
+        min-height: 350px
         width: 100%
+        max-width: 1024px
+        margin: 0 auto
         background: url(/assets/images/ccrp.svg)
         background-repeat: no-repeat
-        background-size: 55%
-        opacity: 0.2
-        background-position: center 45%
+        background-size: 100%
+        opacity: 0
+        background-position: center
+        @media screen and (min-width: 700px)
+            opacity: 0.1
+
+
+
 
     &:before
         background: $orange-two
