@@ -64,11 +64,43 @@
   > p
     text-align: center
     font-size: 18px
+.signal
+    background: #fdf2dc
+    width: 130px
+    height: 130px
+    margin: 0 auto 30px auto
+    display: flex
+    flex-direction: column
+    justify-items: center
+    justify-content: center
+    align-items: center
+    border: 2px solid #000
+    border-radius: 50%
 
+    & > svg
+        width: 55%
+        display: block
+        margin: 0 auto 20px
 
 
 .about
     background: $orange-two
+
+    .signal
+      z-index: 4
+      position: absolute
+      right: 10%
+      width: 200px
+      height: 200px
+      > a
+        display: block
+        padding: 8px
+        background-color: #28223e
+        border-radius: 24px
+        color: white
+        text-decoration: none
+        cursor: pointer
+
 
     p
         display: block
@@ -325,21 +357,7 @@
 
             .signal
                 background: #28223e
-                width: 130px
-                height: 130px
-                margin: 0 auto 30px auto
-                display: flex
-                flex-direction: column
-                justify-items: center
-                justify-content: center
-                align-items: center
-                border: 2px solid #000
-                border-radius: 50%
 
-                & > svg
-                    width: 55%
-                    display: block
-                    margin: 0 auto 20px
 
             .platina
                 color: #b0bec5
