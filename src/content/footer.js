@@ -19,8 +19,9 @@ module.exports = {
         },
     ],
     social: {
-        facebook: { link: '#', logo: '/images/facebook.svg' },
-        twitter: { link: '#', logo: '/images/twitter.svg' },
-        apybr: { link: '#', logo: '/images/pylogo.svg' }
+        facebook: { link: 'https://www.facebook.com/groups/python.brasil', logo: '/images/facebook.svg' },
+        twitter: { link: 'https://twitter.com/pythonbrasil', logo: '/images/twitter.svg' },
+        instagram: { link: 'https://www.instagram.com/pythonbrasil/', logo: '/images/instagram.svg' },
+        apybr: { link: 'https://python.org.br/', logo: '/images/pylogo.svg' }
     }
 }
