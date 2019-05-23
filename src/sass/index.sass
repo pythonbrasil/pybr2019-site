@@ -5,7 +5,7 @@
     box-sizing: border-box
     padding: 0
     margin: 0
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif, serif
     scroll-behavior: smooth
 
 .core-title
@@ -82,6 +82,14 @@
         display: block
         margin: 0 auto 20px
 
+.signal.ouro
+    color: #f5cc7d
+    border-color: #f5cc7d
+
+    & > svg path
+        fill: #f5cc7d!important
+
+
 
 .about
     background: $orange-two
@@ -99,14 +107,19 @@
           left: auto
           width: 200px
           height: 200px
+
+      & > svg
+          width: 40%
+
       > a
         display: block
-        padding: 8px
+        padding: 8px 16px
         background-color: #28223e
         border-radius: 24px
         color: white
         text-decoration: none
         cursor: pointer
+        font-size: 14px
 
 
     p
@@ -117,6 +130,7 @@
         margin: 0 auto
         text-align: center
         font-size: 16px
+        color: white
 
         @media screen and (min-width: 1024px)
             font-size: 24px
@@ -163,20 +177,25 @@
 
     .submit
       max-width: 600px
-      margin: 20px auto
-      padding-bottom: 50px
+      margin: 20px auto 50px auto
+      padding: 50px 20px 50px 20px
+      border-radius: 3px
+      background: #f9f9f9
+      box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.2)
+
       > p
         text-align: center
         font-size: 16px
+        color: $orange-two
       > a
         display: block
         width: auto
-        max-width: 250px
-        margin: 20px auto
+        max-width: 350px
+        margin: 40px auto 20px auto
         text-align: center
-        padding: 8px 16px
-        border-radius: 24px
-
+        padding: 16px
+        border-radius: 50px
+        font-size: 24px
         background: $orange-two
         color: white
         text-decoration: none
@@ -327,11 +346,14 @@
             &:nth-child(1)
                 background: $yellow
 
+
             &:nth-child(2)
                 background: $yellow-two
+                padding-top: 50px
 
             &:nth-child(3)
                 background: $yellow-three
+                padding-top: 50px 
                 padding-bottom: 80px
 
             > .sponsor-entity
@@ -363,6 +385,25 @@
         text-align: center
         grid-row: 1
         grid-column: 2
+        position: relative
+
+        .button.disabled
+          opacity: 0.6
+          pointer-events: none
+          cursor: default
+
+        span.soon-tag
+          display: block
+          padding: 8px
+          background-color: white
+          color: $orange
+          font-weight: bold
+          position: absolute
+          border-radius: 3px
+          font-size: 12px
+          top: 0
+          right: -10px
+          transform: rotate(20deg)
 
         & > .social-icons
             display: inline-block
@@ -427,6 +468,8 @@
         text-align: center
         border-radius: 50px
         text-decoration: none
+
+
 
     .copyright
         display: block
