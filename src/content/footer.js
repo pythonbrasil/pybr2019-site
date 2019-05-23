@@ -1,7 +1,7 @@
 module.exports = {
     nav: [
         {
-            title: 'Parceiros',
+            title: 'Sobre',
             items: [
                 { text: 'Local', link: 'https://goo.gl/maps/m7ttyu5CCnBjobmD7' },
                 { text: 'Keynote', link: '#section-keynote' },
