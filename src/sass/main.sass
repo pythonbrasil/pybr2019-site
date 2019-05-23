@@ -117,14 +117,6 @@
             position: absolute
             background: #fdf2dc
             border-radius: 50%
-
-        .pylogo-main
-            position: absolute
-            top: calc(50% - 50px)
-            left: calc(50% - 50px)
-            width: 100px
-            z-index: 4
-
     & > .nav
         z-index: 6
 
@@ -172,13 +164,18 @@
                     font-size: 16px
                     padding: 16px
 
-    & > .mobile.pylogo-main
+    & > .pylogo-main
+      background: url(/assets/images/python_brasil_logo_white.png)
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
       display: block
-      width: 50px
+      width: 200px
       height: 50px
       position: absolute
-      top: 10px
+      top: 25px
       left: 10px
 
       @media screen and (min-width: 1024px)
-          display: none
+          top: 10px
+          left: 5%
