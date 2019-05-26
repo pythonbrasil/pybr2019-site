@@ -46,6 +46,16 @@ gulpStatic({
     customWatchers: [
         { files: './src/content/**/*', tasks: ['content', 'handlebars'] }
     ],
+    move: [
+      {
+        input: './pdfs/**/*',
+        output: './dist/assets/pdfs'
+      },
+      {
+        input: './src/submissao-de-palestras.html',
+        output: './dist/submissao-de-palestras/index.html'
+      }
+    ],
     css: {
         input: './src/sass/index.sass',
         output: './dist/assets/css',
