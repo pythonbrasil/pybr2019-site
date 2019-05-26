@@ -48,6 +48,10 @@ gulpStatic({
     ],
     move: [
       {
+        input: './CNAME',
+        output: './dist'
+      },
+      {
         input: './pdfs/**/*',
         output: './dist/assets/pdfs'
       },
