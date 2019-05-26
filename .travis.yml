@@ -1,11 +1,15 @@
 language: node_js
+node_js:
+  - "11"
+
 script: npm run build
 
 deploy:
   local_dir: dist
-  on:
-    branch: gh-pages
+  target-branch: gh-pages
   provider: pages
   github_token: $GITHUB_TOKEN
   keep_history: true
   skip_cleanup: true
+  on:
+    branch: master
