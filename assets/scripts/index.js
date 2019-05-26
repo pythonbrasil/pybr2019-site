@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){var e=document.getElementById("header-nav");document.getElementById("mobile").onclick=function(){this.classList.toggle("close"),e.classList.toggle("active")}};
