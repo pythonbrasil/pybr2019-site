@@ -89,6 +89,11 @@
     & > svg path
         fill: #f5cc7d!important
 
+.cloud
+    background: url(/assets/images/cloud_background_2.svg)
+    background-position: center
+    background-size: contain
+    opacity: .6
 
 
 .about
@@ -136,20 +141,7 @@
             font-size: 24px
             padding: 16px
 
-    .ccrp
-        position: absolute
-        bottom: 0
-        min-height: 350px
-        width: 100%
-        max-width: 1024px
-        margin: 0 auto
-        background: url(/assets/images/ccrp.svg)
-        background-repeat: no-repeat
-        background-size: 100%
-        opacity: 0
-        background-position: center
-        @media screen and (min-width: 700px)
-            opacity: 0.1
+
 
 
 
@@ -171,6 +163,12 @@
 
 .keynote
     background: $orange-three
+
+    & > .cloud
+        width: 100%
+        min-height: 600px
+        position: absolute
+        opacity: .3
 
     &:before
         background: $orange-three
