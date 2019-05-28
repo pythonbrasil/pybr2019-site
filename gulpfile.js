@@ -56,8 +56,8 @@ gulpStatic({
         output: './dist/assets/pdfs/'
       },
       {
-        input: './src/submissao-de-palestras.html',
-        output: './dist/submissao-de-palestras/index.html'
+        input: './src/submissao-de-palestras',
+        output: './dist/'
       }
     ],
     css: {
