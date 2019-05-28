@@ -420,6 +420,40 @@
 
             path
                 fill: #fbf3e4!important
+    .newsletter
+      > p
+        display: inline-block
+        font-size: 14px
+        padding: 20px 0
+      > form
+        margin: 0 auto
+        padding: 8px 0
+        @media screen and (min-width: 896px)
+          margin: 0 40px
+
+        > input
+          display: inline-block
+          width: 80%
+          height: 42px
+          border-radius: 3px
+          border: 1px solid white
+          padding: 0 8px
+
+        > button
+          display: inline-block
+          height: 42px
+          padding: 8px
+          margin: 0
+          color: white
+          background-color: $blue-two
+          border-radius: 3px
+          border: 1px solid white
+          cursor: pointer
+
+          &:hover
+            background-color: $orange
+            border-color: $orange
+            color: white
     .nav
         grid-row: 1
         grid-column: 1
