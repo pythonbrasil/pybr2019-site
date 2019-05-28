@@ -13,7 +13,7 @@ module.exports = {
         {
             title: 'Patrocínio',
             items: [
-                { text: 'Quero Patrocinar', link: 'https://github.com/pythonbrasil/pythonbrasil-2019-site/raw/master/assets/pdfs/plano_de_patrocinio.pdf' },
+                { text: 'Quero Patrocinar', link: '/assets/pdfs/plano_de_patrocinio.pdf' },
                 { text: 'Patrocinadores', link: '#section-sponser' },
             ]
         },
