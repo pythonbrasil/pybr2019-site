@@ -53,7 +53,7 @@ gulpStatic({
       },
       {
         input: './pdfs/**/*',
-        output: './dist/assets/pdfs'
+        output: './dist/assets/pdfs/'
       },
       {
         input: './src/submissao-de-palestras.html',
