@@ -89,6 +89,11 @@
     & > svg path
         fill: #f5cc7d!important
 
+.cloud
+    background: url(/assets/images/cloud_background_2.svg)
+    background-position: center
+    background-size: contain
+    opacity: .6
 
 
 .about
@@ -136,20 +141,7 @@
             font-size: 24px
             padding: 16px
 
-    .ccrp
-        position: absolute
-        bottom: 0
-        min-height: 350px
-        width: 100%
-        max-width: 1024px
-        margin: 0 auto
-        background: url(/assets/images/ccrp.svg)
-        background-repeat: no-repeat
-        background-size: 100%
-        opacity: 0
-        background-position: center
-        @media screen and (min-width: 700px)
-            opacity: 0.1
+
 
 
 
@@ -171,6 +163,12 @@
 
 .keynote
     background: $orange-three
+
+    & > .cloud
+        width: 100%
+        min-height: 600px
+        position: absolute
+        opacity: .3
 
     &:before
         background: $orange-three
@@ -420,6 +418,40 @@
 
             path
                 fill: #fbf3e4!important
+    .newsletter
+      > p
+        display: inline-block
+        font-size: 14px
+        padding: 20px 0
+      > form
+        margin: 0 auto
+        padding: 8px 0
+        @media screen and (min-width: 896px)
+          margin: 0 40px
+
+        > input
+          display: inline-block
+          width: 80%
+          height: 42px
+          border-radius: 3px
+          border: 1px solid white
+          padding: 0 8px
+
+        > button
+          display: inline-block
+          height: 42px
+          padding: 8px
+          margin: 0
+          color: white
+          background-color: $blue-two
+          border-radius: 3px
+          border: 1px solid white
+          cursor: pointer
+
+          &:hover
+            background-color: $orange
+            border-color: $orange
+            color: white
     .nav
         grid-row: 1
         grid-column: 1
