@@ -23,5 +23,6 @@ module.exports = {
         twitter: { link: 'https://twitter.com/pythonbrasil', logo: '/images/twitter.svg' },
         instagram: { link: 'https://www.instagram.com/pythonbrasil/', logo: '/images/instagram.svg' },
         apybr: { link: 'https://python.org.br/', logo: '/images/pylogo.svg' }
-    }
+    },
+  buyTicketLink: 'https://pythonbrasil2019.eventbrite.com.br'
 }
