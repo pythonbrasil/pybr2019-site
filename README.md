@@ -25,7 +25,7 @@ docker-compose +1.23
 ### Running
 
 ```bash
-docker-compose up # or docker-compose -d up if you want to dettach it from the terminal
+docker-compose up # or docker-compose up -d if you want to dettach it from the terminal
 ```
 
 Then access http://localhost:8080/index.html
