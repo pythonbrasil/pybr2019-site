@@ -14,3 +14,18 @@ $ npm run build
 # Serve o site na porta 8080
 $ npm run serve
 ```
+
+## Desenvolvimento:
+
+### Req
+
+Docker +18.06
+docker-compose +1.23
+
+### Running
+
+```bash
+docker-compose up # or docker-compose up -d if you want to dettach it from the terminal
+```
+
+Then access http://localhost:8080/index.html

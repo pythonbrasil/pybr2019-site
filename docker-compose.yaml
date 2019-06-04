@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  pybr_site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: "pybr_site"
+    environment:
+      - PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/src/node_modules
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/src
