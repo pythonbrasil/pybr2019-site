@@ -7,7 +7,7 @@ module.exports = {
                 { text: 'Keynote', link: '#section-keynote' },
                 { text: 'Evento', link: '#section-about' },
                 // { text: 'Programação', link: '#' },
-                { text: 'Código de Conduda', link: 'https://python.org.br/cdc/' },
+                { text: 'Código de Conduta', link: 'https://python.org.br/cdc/' },
             ]
         },
         {
