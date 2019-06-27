@@ -4,15 +4,23 @@ const Entity = (name, photo, link) => ({
 });
 
 module.exports = {
-    sponsors: [
-        {
-            title: 'Patrocinadores',
-            type: 'prata',
-            items: [
-                Entity('Evolux', 'evolux.png', '')
-            ],
-        }
-    ],
+    sponsors: {
+        title: 'Patrocinadores',
+        categories: [
+            {
+                type: 'ouro',
+                items: [
+                    Entity('olist', 'olist.png', '')
+                ],
+            },
+            {
+                type: 'prata',
+                items: [
+                    Entity('Evolux', 'evolux.png', '')
+                ],
+            }
+        ]
+    },
     partners: [
       {
         title: 'Parceiros',

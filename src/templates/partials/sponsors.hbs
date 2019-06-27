@@ -1,4 +1,4 @@
-<div class="rounded sponsors" id="section-sponser">
+<div class="rounded sponsors" id="section-sponsor">
     <div class="sponsor-action">
       <p>A maior conferência de Python da América Latina</p>
 
@@ -7,11 +7,11 @@
       </a>
     </div>
     <div class="sponsor-section">
-        {{#each sponsors.sponsors}}
+        {{#if sponsors.sponsors.title}}
+            <h1>{{ sponsors.sponsors.title }}</h1>
+        {{/if}}
+        {{#each sponsors.sponsors.categories}}
             <div>
-                {{#if title}}
-                    <h1> {{ title }}</h1>
-                {{/if}}
                 <div class="signal {{type}}">
                     {{>pylogo }}
                     <div>{{type}}</div>
