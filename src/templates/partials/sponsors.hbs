@@ -18,7 +18,9 @@
                 </div>
                 {{#each items}}
                     <div class="sponsor-entity">
-                        <img src="{{photo}}" alt="{{name}}">
+                        <a href="{{link}}" target="_blank">
+                            <img src="{{photo}}" alt="{{name}}">
+                        </a>
                     </div>
                 {{/each}}
             </div>
@@ -32,7 +34,9 @@
             {{/if}}
             {{#each items}}
                 <div class="sponsor-entity">
-                    <img src="{{photo}}" alt="{{name}}">
+                    <a href="{{link}}" target="_blank">
+                        <img src="{{photo}}" alt="{{name}}">
+                    </a>
                 </div>
             {{/each}}
 
