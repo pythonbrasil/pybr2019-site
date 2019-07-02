@@ -246,7 +246,6 @@
     .sponsor-action
       text-align: center
       position: relative
-      height: 150px
 
       > p
         font-size: 20px
@@ -265,22 +264,25 @@
             font-size: 40px
             padding: 16px
 
-      .button
-          background: $blue-two
-          padding: 16px
-          color: white
-          font-size: 16px
-          display: block
-          text-align: center
-          border-radius: 50px
-          text-decoration: none
-          max-width: 250px
-          margin: 0 auto
-          position: absolute
-          top: 120px
-          left: 0
-          right: 0
+      .sponsor-button-container
+        display: flex
+        align-items: center
+        justify-content: center
 
+        .button
+            background: $blue-two
+            padding: 16px
+            margin: 10px
+            color: white
+            font-size: 16px
+            display: inline
+            text-align: center
+            border-radius: 50px
+            text-decoration: none
+            max-width: 250px
+            top: 120px
+            left: 0
+            right: 0
 
     h1
         @extend .core-title

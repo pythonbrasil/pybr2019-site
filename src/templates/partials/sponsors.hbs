@@ -1,12 +1,17 @@
-<div class="rounded sponsors" id="section-sponsor">
-    <div class="sponsor-action">
+<div class="rounded sponsors">
+    <div class="sponsor-action" id="section-sponsor">
       <p>A maior conferência de Python da América Latina</p>
 
-      <a href="/assets/pdfs/plano_de_patrocinio.pdf" target="_blank" class="button">
-          quero patrocinar
-      </a>
+      <div class="sponsor-button-container">
+          <a href="/assets/pdfs/plano_de_patrocinio.pdf" target="_blank" class="button">
+              Quero patrocinar!
+          </a>
+          <a href="/assets/pdfs/sponsorship_plan.pdf" target="_blank" class="button">
+              I want to sponsor!
+          </a>
+      </div>
     </div>
-    <div class="sponsor-section">
+    <div class="sponsor-section" id="section-sponsors">
         {{#if sponsors.sponsors.title}}
             <h1>{{ sponsors.sponsors.title }}</h1>
         {{/if}}
