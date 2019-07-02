@@ -13,8 +13,8 @@ module.exports = {
         {
             title: 'Patrocínio',
             items: [
-                { text: 'Quero Patrocinar', link: '/assets/pdfs/plano_de_patrocinio.pdf' },
-                { text: 'Patrocinadores', link: '#section-sponser' },
+                { text: 'Quero Patrocinar', link: '#section-sponsor' },
+                { text: 'Patrocinadores', link: '#section-sponsors' },
             ]
         },
     ],
