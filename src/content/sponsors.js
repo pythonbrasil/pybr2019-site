@@ -10,13 +10,15 @@ module.exports = {
             {
                 type: 'ouro',
                 items: [
-                    Entity('olist', 'olist.png', 'https://olist.com')
+                    Entity('olist', 'olist.png', 'https://olist.com'),
+                    Entity('Stoodi', 'stoodi.png', 'https://www.stoodi.com.br/')
                 ],
             },
             {
                 type: 'prata',
                 items: [
-                    Entity('Evolux', 'evolux.png', 'https://www.evolux.net.br')
+                    Entity('Evolux', 'evolux.png', 'https://www.evolux.net.br'),
+                    Entity('Lab Codes', 'labcodes.png', 'https://labcodes.com.br/')
                 ],
             }
         ]
