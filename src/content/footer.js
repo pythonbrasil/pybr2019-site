@@ -4,7 +4,7 @@ module.exports = {
             title: 'Sobre',
             items: [
                 { text: 'Local', link: 'https://goo.gl/maps/m7ttyu5CCnBjobmD7' },
-                { text: 'Keynote', link: '#section-keynote' },
+                { text: 'Keynotes', link: '#section-keynote' },
                 { text: 'Evento', link: '#section-about' },
                 // { text: 'Programação', link: '#' },
                 { text: 'Código de Conduta', link: 'https://python.org.br/cdc/' },
