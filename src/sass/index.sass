@@ -362,7 +362,10 @@
 
               > a img
                 min-height: 50px
-                max-height: 200px
+                max-height: 100px
+
+                @media screen and (min-width: 896px)
+                    max-height: 200px
 
 .footer
     background: $black
