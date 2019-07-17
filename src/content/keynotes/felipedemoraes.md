@@ -1,5 +1,5 @@
 ---
-photo: felipedemorais.jpg
+photo: felipemorais.jpg
 social: https://www.linkedin.com/in/felipe-de-morais
 twitter: https://www.twitter.com/felipedemorais_
 ---
