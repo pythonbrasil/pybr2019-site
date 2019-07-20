@@ -357,26 +357,32 @@
                 padding-top: 50px
                 padding-bottom: 80px
 
-            > .sponsor-entity
-              text-align: center
-              margin: 20px auto
-              @media screen and (min-width: 896px)
-                margin: 50px auto
+            > .sponsor-entity-container
+              display: flex
+              flex-flow: wrap
+              justify-content: center
+              width: 100%
 
-              > a
-                display: block
-                margin: 0 auto
-                width: 150px
-                height: 100px
-                line-height: 150px
+              > .sponsor-entity
+                text-align: center
+                margin: 10px
                 @media screen and (min-width: 896px)
-                  width: 300px
-                  height: 200px
-                  line-height: 200px
-                > img
-                  max-height: 100%
-                  max-width: 100%
-                  vertical-align: middle
+                  margin: 30px
+
+                > a
+                  display: block
+                  margin: 0 auto
+                  width: 150px
+                  height: 100px
+                  line-height: 150px
+                  @media screen and (min-width: 896px)
+                    width: 300px
+                    height: 200px
+                    line-height: 200px
+                  > img
+                    max-height: 100%
+                    max-width: 100%
+                    vertical-align: middle
 
 .footer
     background: $black
