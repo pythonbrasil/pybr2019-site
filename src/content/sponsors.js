@@ -8,6 +8,12 @@ module.exports = {
         title: 'Patrocinadores',
         categories: [
             {
+                type: 'platina',
+                items: [
+                    Entity('Python Software Foundation', 'psf.png', 'https://www.python.org')
+                ],
+            },
+            {
                 type: 'ouro',
                 items: [
                     Entity('Loadsmart', 'loadsmart-logo-horizontal.png', 'https://www.loadsmart.com'),
