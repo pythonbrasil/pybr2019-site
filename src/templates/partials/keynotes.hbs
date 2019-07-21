@@ -1,22 +1,25 @@
 <div class="rounded keynote" id="section-keynote">
-    <h2> Programação & Keynotes </h2>
-    <div class="soon">
-      <p>em breve mais informações</p>
-    </div>
-    <!-- {{#each keynotes}}
+    <h2> Keynotes </h2>
+    {{#each keynotes}}
         <div class="keynoter">
-            <div class="photo" style="background-image: url('/assets/images/keynotes/{{meta.photo}}')"></div>
+            <div class="photo" style="background-image: url('/assets/images/keynotes/{{meta.photo}}')">
+              <div class="social">
+                {{#if meta.social}}
+                  <a href="{{meta.social}}" target="_blank">
+                    {{> svgs/linkedin }}
+                  </a>
+                {{/if}}
+                {{#if meta.twitter}}
+                  <a href="{{meta.twitter}}" target="_blank">
+                    {{> svgs/twitter }}
+                  </a>
+                {{/if}}
+              </div>
+            </div>
             <div class="content">
                 {{{ html }}}
             </div>
-            <div class="social">
-              {{#if social}}
-                <a href="{{social}}"></a>
-              {{/if}}
-              {{#if twitter}}
-                <a href="{{twitter}}"></a>
-              {{/if}}
-            </div>
+
         </div>
-    {{/each}} -->
+    {{/each}}
 </div>
