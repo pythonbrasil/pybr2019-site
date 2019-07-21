@@ -5,6 +5,8 @@ twitter: https://www.twitter.com/loooorenanicole
 ---
 
 ### Lorena Mesa
-#### Data Engineer @ Github
+#### Engenheira de Dados @ Github
 
-Political scientist turned coder, Lorena Mesa is a data engineer on GitHub's software intelligence systems team, Director on the Python Software Foundation, and PyLadies Chicago co-organizer. Lorena's time at Obama for America and her subsequent graduate research required her to learn how to transform messy, incomplete data into intelligible analysis on topics like predicting Latinx voter behavior. It's this unique background in research and applied mathematics that drove Lorena to pursue a career in engineering and data science. One part activist, one part Star Wars fanatic, and another part Trekkie, Lorena abides by the motto to "live long and prosper".
+Cientista política que virou programadora, Lorena Mesa é engenheira de dados na equipe de sistemas de inteligência de software do GitHub, diretora da Python Software Foundation e coorganizadora do PyLadies Chicago.
+Durante o seu período na campanha "Obama for America" e, em seguida, na pesquisa de pós-graduação, Lorena teve que aprender como transformar dados confusos e incompletos em análises inteligíveis, como por exemplo a previsão do comportamento dos eleitores latinos. Foi esse histórico em pesquisa e matemática aplicada que levou Lorena a seguir uma carreira em engenharia e ciência de dados.
+Uma parte ativista, uma parte fanática por Star Wars e outra Trekkie, Lorena segue o lema "live long and prosper".
