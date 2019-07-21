@@ -18,7 +18,7 @@ module.exports = {
             {
                 type: 'prata',
                 items: [
-                    Entity('Evolux', 'evolux.png', 'https://www.evolux.net.br'),
+                    Entity('Evolux', 'logo-evolux.svg', 'https://www.evolux.net.br'),
                     Entity('Lab Codes', 'labcodes.png', 'https://labcodes.com.br/')
                 ],
             }
