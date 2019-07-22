@@ -2,6 +2,7 @@
 photo: lorenamesa.jpg
 social: https://www.github.com/lorenaniccole
 twitter: https://www.twitter.com/loooorenanicole
+publish: true
 ---
 
 ### Lorena Mesa

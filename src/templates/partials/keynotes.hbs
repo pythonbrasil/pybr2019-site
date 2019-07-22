@@ -1,6 +1,7 @@
 <div class="rounded keynote" id="section-keynote">
     <h2> Keynotes </h2>
     {{#each keynotes}}
+        {{#if meta.publish}}
         <div class="keynoter">
             <div class="photo" style="background-image: url('/assets/images/keynotes/{{meta.photo}}')">
               <div class="social">
@@ -21,5 +22,6 @@
             </div>
 
         </div>
+        {{/if}}
     {{/each}}
 </div>
