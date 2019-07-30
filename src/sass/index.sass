@@ -78,9 +78,9 @@
     border-radius: 50%
 
     & > svg
-        width: 55%
+        width: 50%
         display: block
-        margin: 0 auto 20px
+        margin: 0 auto 5px
 
 .signal.ouro
     color: #f5cc7d
@@ -298,11 +298,11 @@
                 grid-row: 1
 
 .sponsors
-    background: $orange
+    background: $yellow-three
     padding-bottom: 0
 
     &:before
-        background: $orange
+        background: $yellow-three
 
     .sponsor-action
       text-align: center
@@ -312,7 +312,7 @@
         font-size: 20px
         font-weight: bold
         text-transform: uppercase
-        color: #fdf2dc
+        color: $orange
         text-align: center
         margin: 0 auto
         padding: 8px
@@ -359,22 +359,7 @@
 
 
     & > .sponsor-section
-        background: $yellow
-
-        .partners
-          position: relative
-          > hr
-            height: 4px
-            background: #28223e
-            position: absolute
-            top: 0
-            left: 0
-            right: 0
-            margin: 0 auto
-            width: 230px
-
-            @media screen and (min-width: 550px)
-                width: 500px
+        background: $yellow-three
 
         & > div
             width: 100%
@@ -382,7 +367,6 @@
 
             .signal
                 background: #28223e
-
 
             .platina
                 color: #b0bec5
@@ -406,11 +390,11 @@
                     fill: #eceff1!important
 
             &:nth-child(1)
-                background: $yellow
+                background: $yellow-three
 
 
             &:nth-child(2)
-                background: $yellow-two
+                background: $yellow-three
                 padding-top: 50px
 
             &:nth-child(3)
@@ -419,10 +403,12 @@
                 padding-bottom: 80px
 
             > .sponsor-entity-container
-              display: flex
-              flex-flow: wrap
-              justify-content: center
-              width: 100%
+              display: block
+              @media screen and (min-width: 896px)
+                display: flex
+                flex-flow: wrap
+                justify-content: center
+                width: 100%
 
               > .sponsor-entity
                 text-align: center
@@ -434,16 +420,32 @@
                   display: block
                   margin: 0 auto
                   width: 150px
-                  height: 100px
+                  height: 150px
                   line-height: 150px
                   @media screen and (min-width: 896px)
-                    width: 300px
+                    width: 200px
                     height: 200px
                     line-height: 200px
+
                   > img
                     max-height: 100%
                     max-width: 100%
                     vertical-align: middle
+
+        .partners
+          padding-top: 50px
+          position: relative
+          > hr
+            height: 4px
+            background: #28223e
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            margin: 0 auto
+            width: 230px
+            @media screen and (min-width: 550px)
+                width: 500px
 
 .footer
     background: $black
@@ -498,9 +500,9 @@
                 width: 60px
                 margin-top: 20px
                 fill: #fbf3e4
-
             path
                 fill: #fbf3e4!important
+                
     .newsletter
       > p
         display: inline-block
