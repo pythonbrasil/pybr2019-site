@@ -1,6 +1,6 @@
 ---
 photo: lorenamesa.jpg
-social: https://www.github.com/lorenaniccole
+social: https://www.github.com/lorenanicole
 twitter: https://www.twitter.com/loooorenanicole
 publish: true
 ---
