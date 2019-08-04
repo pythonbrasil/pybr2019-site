@@ -5,9 +5,14 @@
         <div class="keynoter">
             <div class="photo" style="background-image: url('/assets/images/keynotes/{{meta.photo}}')">
               <div class="social">
-                {{#if meta.social}}
-                  <a href="{{meta.social}}" target="_blank">
-                    {{> svgs/linkedin }}
+                {{#if meta.linkedin}}
+                  <a href="{{meta.linkedin}}" target="_blank">
+                    {{> svgs/linkedin}}
+                  </a>
+                {{/if}}
+                {{#if meta.github}}
+                  <a href="{{meta.github}}" target="_blank">
+                    {{> svgs/github}}
                   </a>
                 {{/if}}
                 {{#if meta.twitter}}
