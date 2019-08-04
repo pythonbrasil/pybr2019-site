@@ -19,6 +19,7 @@ module.exports = {
                     Entity('Loadsmart', 'loadsmart-logo-horizontal.png', 'https://www.loadsmart.com'),
                     Entity('olist', 'olist.png', 'https://olist.com'),
                     Entity('Stoodi', 'stoodi.png', 'https://www.stoodi.com.br/'),
+                    Entity('Globo.com', 'logo_globo_com.svg', 'https://www.globo.com/'),
                 ],
             },
             {
