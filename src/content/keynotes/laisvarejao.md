@@ -1,6 +1,6 @@
 ---
 photo: laisvarejao.jpg
-social: https://www.github.com/laisvarejao
+github: https://www.github.com/laisvarejao
 twitter: https://www.twitter.com/laisvarejao
 publish: true
 ---

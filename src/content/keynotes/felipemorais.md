@@ -1,6 +1,6 @@
 ---
 photo: felipemorais.jpg
-social: https://www.linkedin.com/in/felipe-de-morais
+linkedin: https://www.linkedin.com/in/felipe-de-morais
 twitter: https://www.twitter.com/felipedemorais_
 publish: true
 ---
