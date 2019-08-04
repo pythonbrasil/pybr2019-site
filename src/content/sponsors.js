@@ -36,6 +36,7 @@ module.exports = {
         items: [
           Entity('associação python brasil', 'apyb.png', 'https://python.org.br/'),
           Entity('USP', 'usp.png', 'https://www5.usp.br/'),
+          Entity('Reges', 'reges.png', 'https://reges.com.br/ribeiraopreto/')
         ]
       }
     ],
