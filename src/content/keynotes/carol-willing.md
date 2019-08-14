@@ -6,7 +6,7 @@ publish: True
 ---
 
 ### Carol Willing
-## Diretora da PSF e Projeto Jupyter, desenvolvedora core do CPython e JupyterHub
+#### Diretora da PSF e Projeto Jupyter, desenvolvedora core do CPython e JupyterHub
 
 Carol Naslund Willing atua no Conselho Diretor do Projeto Jupyter e trabalha como Core Developer no JupyterHub e mybinder.org. Ela também atua como coeditora do “The Journal of Open Source Education” (JOSE) e é coautora de um  livro open source, o “Teaching and Learning with Jupyter”.
 
