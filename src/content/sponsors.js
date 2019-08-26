@@ -28,7 +28,13 @@ module.exports = {
                     Entity('Evolux', 'logo-evolux.svg', 'https://www.evolux.net.br'),
                     Entity('Lab Codes', 'labcodes.png', 'https://labcodes.com.br/'),
                 ],
-            }
+            },
+            {
+                type: 'bronze',
+                items: [
+                    Entity('iDtrust', 'logo-idtrust.png', 'https://www.idtrust.com.br'),
+                ],
+            },
         ]
     },
     partners: [
