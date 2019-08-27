@@ -8,6 +8,12 @@ module.exports = {
         title: 'Patrocinadores',
         categories: [
             {
+                type: 'diamante',
+                items: [
+                    Entity('GitHub', 'GitHub_Logo.png', 'https://github.com'),
+                ],
+            },
+            {
                 type: 'platina',
                 items: [
                     Entity('PSF', 'psf-logo-narrow-256x84-alpha.png', 'https://www.python.org/psf'),
