@@ -58,6 +58,10 @@ gulpStatic({
       {
         input: './src/submissao-de-palestras',
         output: './dist/'
+      },
+      {
+        input: './src/grade/**/*',
+        output: './dist/grade/'
       }
     ],
     css: {
