@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Google Calendar settings
         googleCalendarApiKey: 'AIzaSyAIn8DyZFtthupLozgwIX3NUURFMWEIPb4',
         eventSources: [{
-            googleCalendarId: 'jths8n37mctkpakf2slrtbk5kk@group.calendar.google.com'
+            googleCalendarId: 'ft5mdp26mhosq2heu6g87mb7ns@group.calendar.google.com'
         }]
     });
 
