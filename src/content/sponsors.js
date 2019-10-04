@@ -48,7 +48,8 @@ module.exports = {
         title: 'Parceiros',
         items: [
           Entity('associação python brasil', 'apyb.png', 'https://python.org.br/'),
-          Entity('USP', 'usp.png', 'https://www5.usp.br/')
+          Entity('USP', 'usp.png', 'https://www5.usp.br/'),
+          Entity('Estácio de Sá', 'estacio.png', 'http://portal.estacio.br')
         ]
       }
     ],
