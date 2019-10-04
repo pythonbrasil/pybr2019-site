@@ -1,0 +1,23 @@
+---
+name: Taiwan Hotel
+photo: taiwan.png
+href: https://www.taiwanhotel.com.br
+publish: True
+---
+
+### Taiwan Hotel
+#### _Hotel oficial_
+
+Oferece traslado gratuito do aeroporto para o hotel e vice-versa
+Oferece traslado gratuito do hotel para o evento e vice-versa (válido para os dias de tutoriais, palestras e sprints)
+
+Tarifas para participantes da Python Brasil
+
+| Apartamento            | Tarifa    |
+|------------------------|-----------|
+| Luxo Single (1 pessoa) | R$ 175,00 |
+| Luxo Duplo (2 pessoas) | R$ 205,00 |
+
+Utilize o código promocional PYTHON_BRASIL ao fazer a compra pelo site para acessar a condição especial.
+
+* É cobrado 10% de taxas (Serviço e I.S.S.)

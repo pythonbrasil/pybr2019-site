@@ -330,11 +330,11 @@
                 grid-row: 1
 
 .sponsors
-    background: $yellow-three
+    background: $yellow-two
     padding-bottom: 0
 
     &:before
-        background: $yellow-three
+        background: $yellow-two
 
     .sponsor-action
       text-align: center
@@ -384,14 +384,14 @@
         font-size: 40px
 
         &:after
-            background-color: #f1ba91
+            background-color: $orange
     h2
         &:after
-            background-color: #f1ba91
+            background-color: $orange
 
 
     & > .sponsor-section
-        background: $yellow-three
+        background: $yellow-two
 
         & > div
             width: 100%
@@ -436,15 +436,15 @@
                     fill: #953f27!important
 
             &:nth-child(1)
-                background: $yellow-three
+                background: $yellow-two
 
 
             &:nth-child(2)
-                background: $yellow-three
+                background: $yellow-two
                 padding-top: 50px
 
             &:nth-child(3)
-                background: $yellow-three
+                background: $yellow-two
                 padding-top: 50px
                 padding-bottom: 80px
 
@@ -526,6 +526,153 @@
             width: 230px
             @media screen and (min-width: 550px)
                 width: 500px
+
+.cityguide
+    background: $yellow-three
+
+
+    & > .cloud
+        width: 100%
+        min-height: 600px
+        position: absolute
+        opacity: .3
+
+    &:before
+        background: $yellow-three
+
+    h2
+        &:after
+            background-color: $orange-two
+
+    h3
+        text-align: center
+        font-size: 24px
+        color: $blue-two
+        margin-bottom: 8px
+
+        &:after
+            background-color: $orange-two
+
+    .cityguide-section
+        h3
+            text-align: center
+            font-size: 36px
+            color: $blue-two
+            margin-bottom: 8px
+            &:after
+                background-color: $orange-two
+
+    .hotel
+        display: block
+        padding: 15px 60px 55px
+
+        @media screen and (min-width: 720px)
+            display: grid
+            padding: 15px 60px 55px
+            align-items: center
+            grid-column-gap: 30px
+
+        img
+            max-width: 250px
+            max-height: 250px
+            background-size: contain
+            background-position: center center
+            position: relative
+            margin: 0 auto 20px auto
+
+        p
+            color: $blue-two
+
+        & > .photo
+            border-radius: 50%
+            height: 150px
+            max-width: 150px
+            background-size: contain
+            background-position: center center
+            position: relative
+            margin: 0 auto 20px auto
+
+            @media screen and (min-width: 720px)
+                height: 180px
+                max-width: none
+                margin: 0
+
+            @media screen and (min-width: 1024px)
+                height: 280px
+                max-width: none
+                margin: 0
+
+            > .social
+                display: block
+                position: absolute
+                width: 100%
+                text-align: center
+                bottom: -7%
+                > a
+                  display: inline-block
+                  vertical-align: middle
+                  width: 40px
+                  height: 40px
+                  border-radius: 50%
+                  background: white
+                  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+
+                  @media screen and (min-width: 1024px)
+                      width: 50px
+                      height: 50px
+                  > svg
+                    width: 100%
+                    height: 100%
+                    fill: $orange-three
+
+        & > .content
+            text-align: center
+
+            @media screen and (min-width: 720px)
+                text-align: left
+            & > h3
+                font-size: 34px
+                font-weight: bold
+                margin-bottom: 0px
+                color: $blue-two
+
+            & > h4
+                font-weight: normal
+                margin-bottom: 20px
+                color: $blue-two
+
+            & > p
+                font-size: 18px
+
+
+        &:nth-child(even)
+            grid-template-columns: 100px auto 0
+
+            @media screen and (min-width: 720px)
+                grid-template-columns: 180px auto 5%
+
+            @media screen and (min-width: 1024px)
+                grid-template-columns: 280px auto 15%
+
+        &:nth-child(odd)
+            grid-template-columns: 0 auto 100px
+
+            @media screen and (min-width: 720px)
+                grid-template-columns: 5% auto 180px
+
+            @media screen and (min-width: 1024px)
+                grid-template-columns: 15% auto 280px
+
+            & > .content
+                grid-column: 2
+                grid-row: 1
+                @media screen and (min-width: 720px)
+                    text-align: right
+
+            & > .photo
+                grid-column: 3
+                grid-row: 1
+
 
 .footer
     background: $black

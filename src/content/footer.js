@@ -6,6 +6,7 @@ module.exports = {
                 { text: 'Local', link: 'https://goo.gl/maps/m7ttyu5CCnBjobmD7' },
                 { text: 'Keynotes', link: '#section-keynote' },
                 { text: 'Evento', link: '#section-about' },
+                { text: 'Guia da Cidade', link: '#section-cityguide' },
                 // { text: 'Programação', link: '#' },
                 { text: 'Código de Conduta', link: 'https://python.org.br/cdc/' },
             ]
