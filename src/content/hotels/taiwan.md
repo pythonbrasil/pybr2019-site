@@ -21,3 +21,4 @@ Tarifas para participantes da Python Brasil
 Utilize o código promocional PYTHON_BRASIL ao fazer a compra pelo site para acessar a condição especial.
 
 * É cobrado 10% de taxas (Serviço e I.S.S.)
+* Reservando um mínimo de 5 diárias, a 5ª é cortesia
