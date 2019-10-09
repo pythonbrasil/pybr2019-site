@@ -33,6 +33,7 @@ module.exports = {
                 items: [
                     Entity('Evolux', 'logo-evolux.svg', 'https://www.evolux.net.br'),
                     Entity('Lab Codes', 'labcodes.png', 'https://labcodes.com.br/'),
+                    Entity('WhatsGood', 'whatsgood.png', 'https://whatsgood.com.br'),
                 ],
             },
             {
