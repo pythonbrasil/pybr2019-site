@@ -4,9 +4,9 @@
         <h3> Onde ficar </h3>
         {{#each hotels}}
             <div class="hotel">
-                <img src="/assets/images/hotels/{{meta.photo}}" alt="{{meta.name}}">
-                {{!-- <div class="photo" style="background-image: url('/assets/images/hotels/{{meta.photo}}')">
-                </div> --}}
+                <a href="{{ meta.href }}" target="_blank">
+                    <img src="/assets/images/hotels/{{meta.photo}}" alt="{{meta.name}}">
+                </a>
                 <div class="content">
                     {{{ html }}}
                 </div>

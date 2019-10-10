@@ -22,7 +22,7 @@ const loadData = (folderPath, objectPaths = []) => {
             let paths = [...objectPaths, file.replace('.js', '')]
             set(data, paths, require(`${process.cwd()}/${folderPath}/${file}`));
         } else {
-            const conv = new Converter({metadata: true, tables: true});
+            const conv = new Converter({metadata: true, tables: true, openLinksInNewWindow: true});
             let paths = [...objectPaths, file.replace('.md', '')]
 
             set(data, paths, {
