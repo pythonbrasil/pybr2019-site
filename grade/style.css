@@ -77,9 +77,19 @@ footer>a:visited {
   justify-content: space-between;
 }
 
-.roomContent {
+.meta {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.speaker {
+  color: hsla(146, 100%, 20%, 1.0);
+  background: #01FF70;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-right: 20px;
 }
 
 .room {
@@ -115,7 +125,11 @@ footer>a:visited {
     border-width: 0;
   }
 
-  .roomContent {
+  .meta {
     margin-top: 10px;
+  }
+
+  .speaker {
+    margin-right: 0;
   }
 }
