@@ -84,17 +84,28 @@ document.addEventListener('DOMContentLoaded', function() {
         },
 
         eventRender: function(info) {
-          var room = document.createElement("span");
+          // Palestrante
+          var speaker = document.createElement("div");
+          speaker.className = "speaker";
+          speaker.appendChild(
+            document.createTextNode(info.event._def.extendedProps.private.author)
+          )
+
+          // Sala
+          var room = document.createElement("div");
           room.className = "room";
           room.appendChild(
             document.createTextNode(info.event._def.extendedProps.location)
           )
 
-          var roomContent = document.createElement("div");
-          roomContent.className = "roomContent";
-          roomContent.appendChild(room);
+          var meta = document.createElement("div");
+          meta.className = "meta";
+          if (info.event._def.extendedProps.private.author) {
+            meta.appendChild(speaker);
+          }
+          meta.appendChild(room);
 
-          info.el.lastChild.appendChild(roomContent);
+          info.el.lastChild.appendChild(meta);
         },
         // Google Calendar settings
         googleCalendarApiKey: 'AIzaSyAIn8DyZFtthupLozgwIX3NUURFMWEIPb4',
