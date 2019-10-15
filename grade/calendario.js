@@ -82,6 +82,20 @@ document.addEventListener('DOMContentLoaded', function() {
         eventClick: function(info) {
           info.jsEvent.preventDefault();
         },
+
+        eventRender: function(info) {
+          var room = document.createElement("span");
+          room.className = "room";
+          room.appendChild(
+            document.createTextNode(info.event._def.extendedProps.location)
+          )
+
+          var roomContent = document.createElement("div");
+          roomContent.className = "roomContent";
+          roomContent.appendChild(room);
+
+          info.el.lastChild.appendChild(roomContent);
+        },
         // Google Calendar settings
         googleCalendarApiKey: 'AIzaSyAIn8DyZFtthupLozgwIX3NUURFMWEIPb4',
         eventSources: [{
