@@ -70,3 +70,52 @@ footer>a:visited {
 .made-with span {
     color: #f56b6b;
 }
+
+.fc-list-item-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.roomContent {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+}
+
+.room {
+  color: #7FDBFF;
+  background: #001f3f;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+  .fc-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fc-list-item-marker {
+    display: none;
+  }
+  .fc-list-item-time,
+  .fc-list-item-title {
+    border-width: 0;
+  }
+
+  .fc-list-item-title {
+    flex-direction: column;
+  }
+
+  .fc-list-item td:last-child {
+    border-bottom-width: 1px !important;
+  }
+
+  .fc-list-table td {
+    border-width: 0;
+  }
+
+  .roomContent {
+    margin-top: 10px;
+  }
+}
