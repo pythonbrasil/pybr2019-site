@@ -72,64 +72,100 @@ footer>a:visited {
 }
 
 .fc-list-item-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .meta {
-  font-family: "Lucida Console", Monaco, monospace;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .speaker {
-  color: hsla(146, 100%, 20%, 1.0);
-  background: #01FF70;
-  padding: 2px 6px;
-  border-radius: 4px;
-  margin-right: 20px;
+    color: rgb(97, 88, 25);
+    background: #FFDC00;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-right: 20px;
 }
 
 .room {
-  color: #7FDBFF;
-  background: #001f3f;
-  padding: 2px 6px;
-  border-radius: 4px;
+    color: #7FDBFF;
+    background: #001f3f;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    /* Black fallback color */
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+#overlay-title {
+    padding-right: 35px;
+}
+
+.overlay-content {
+    margin: auto;
+    width: 80%;
+}
+
+.overlay .close-full-detail {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#overlay-author,
+#overlay-room {
+    padding: 4px 8px;
 }
 
 @media only screen and (max-width: 600px) {
-  .fc-list-item {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .fc-list-item-marker {
-    display: none;
-  }
-  .fc-list-item-time,
-  .fc-list-item-title {
-    border-width: 0;
-  }
-
-  .fc-list-item-title {
-    flex-direction: column;
-  }
-
-  .fc-list-item td:last-child {
-    border-bottom-width: 1px !important;
-  }
-
-  .fc-list-table td {
-    border-width: 0;
-  }
-
-  .meta {
-    margin-top: 10px;
-  }
-
-  .speaker {
-    margin-right: 0;
-  }
+    .fc-list-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .fc-list-item-marker {
+        display: none;
+    }
+    .fc-list-item-time,
+    .fc-list-item-title {
+        border-width: 0;
+    }
+    .fc-list-item-title {
+        flex-direction: column;
+    }
+    .fc-list-item td:last-child {
+        border-bottom-width: 1px !important;
+    }
+    .fc-list-table td {
+        border-width: 0;
+    }
+    .meta {
+        margin-top: 10px;
+    }
+    .speaker {
+        margin-right: 0;
+    }
 }
