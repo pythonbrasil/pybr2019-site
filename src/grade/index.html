@@ -16,22 +16,36 @@
 </head>
 
 <body>
-  <div class='grade'>
-    <div id='calendar'></div>
-  </div>
-  <footer>
-      <img class="python-logo" src="logo.png" /></div>
-      <a class="footer-title" href="/">Python Brasil <span class="current-year">2019</span></a>
-      <a href="https://calendar.google.com/calendar/embed?src=jths8n37mctkpakf2slrtbk5kk@group.calendar.google.com">Incorporar agenda</a> &nbsp;
-      <a href="https://calendar.google.com/calendar/ical/jths8n37mctkpakf2slrtbk5kk@group.calendar.google.com/public/basic.ics">(.ics)</a> &nbsp;
-  </footer>
+    <div class='grade'>
+        <div id='calendar'></div>
+    </div>
+    <footer>
+        <img class="python-logo" src="logo.png" /></div>
+        <a class="footer-title" href="/">Python Brasil <span class="current-year">2019</span></a>
+        <a href="https://calendar.google.com/calendar/embed?src=jths8n37mctkpakf2slrtbk5kk@group.calendar.google.com">Incorporar agenda</a> &nbsp;
+        <a href="https://calendar.google.com/calendar/ical/jths8n37mctkpakf2slrtbk5kk@group.calendar.google.com/public/basic.ics">(.ics)</a> &nbsp;
+    </footer>
 
-  <script src='https://unpkg.com/@fullcalendar/core@4.3.1/main.min.js'></script>
-  <script src='https://unpkg.com/@fullcalendar/core@4.3.1/locales/pt-br.js'></script>
-  <script src='google-calendar.js'></script>
-  <script src='https://unpkg.com/@fullcalendar/daygrid/main.min.js'></script>
-  <script src='https://unpkg.com/@fullcalendar/timegrid/main.min.js'></script>
-  <script src='https://unpkg.com/@fullcalendar/list/main.min.js'></script>
-  <script src='calendario.js'></script>
+    <div id="full-detail" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="close-full-detail" onclick="close_details()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <h1 id="overlay-title"></h1>
+            <p><span id="overlay-author" class="speaker"></span></p>
+            <p><span id="overlay-room" class="room"></span></p>
+            <p id="overlay-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere expedita nesciunt quos, illum sint amet illo, a ipsam officiis porro libero nihil delectus architecto quas praesentium ratione totam perferendis maiores.</p>
+        </div>
+    </div>
+
+    <script src='https://unpkg.com/@fullcalendar/core@4.3.1/main.min.js'></script>
+    <script src='https://unpkg.com/@fullcalendar/core@4.3.1/locales/pt-br.js'></script>
+    <script src='google-calendar.js'></script>
+    <script src='https://unpkg.com/@fullcalendar/daygrid/main.min.js'></script>
+    <script src='https://unpkg.com/@fullcalendar/timegrid/main.min.js'></script>
+    <script src='https://unpkg.com/@fullcalendar/list/main.min.js'></script>
+    <script src='calendario.js'></script>
 </body>
+
 </html>
