@@ -17,6 +17,7 @@ module.exports = {
                 type: 'platina',
                 items: [
                     Entity('PSF', 'PSF-Logo-Narrow-Shapes.svg', 'https://www.python.org/psf'),
+                    Entity('GrupoZAP', 'grupozap.png', 'https://www.grupozap.com'),
                 ],
             },
             {
