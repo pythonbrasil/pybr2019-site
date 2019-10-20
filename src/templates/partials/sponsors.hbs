@@ -15,15 +15,15 @@
         {{#if sponsors.sponsors.title}}
             <h1>{{ sponsors.sponsors.title }}</h1>
         {{/if}}
-        {{#each sponsors.sponsors.categories}}
+        {{#each sponsors.sponsors.categories as |category|}}
             <div>
-                <div class="signal {{type}}">
+                <div class="signal {{category.type}}">
                     {{>pylogo }}
-                    <div>{{type}}</div>
+                    <div>{{category.type}}</div>
                 </div>
                 <div class="sponsor-entity-container">
                     {{#each items}}
-                        <div class="sponsor-entity">
+                        <div class="sponsor-entity {{category.type}}">
                             <a href="{{link}}" target="_blank">
                                 <img src="{{photo}}" alt="{{name}}">
                             </a>

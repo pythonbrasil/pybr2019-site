@@ -330,11 +330,10 @@
                 grid-row: 1
 
 .sponsors
-    background: $yellow-three
-    padding-bottom: 0
+    background: $yellow-two
 
     &:before
-        background: $yellow-three
+        background: $yellow-two
 
     .sponsor-action
       text-align: center
@@ -384,14 +383,14 @@
         font-size: 40px
 
         &:after
-            background-color: #f1ba91
+            background-color: $orange
     h2
         &:after
-            background-color: #f1ba91
+            background-color: $orange
 
 
     & > .sponsor-section
-        background: $yellow-three
+        background: $yellow-two
 
         & > div
             width: 100%
@@ -436,15 +435,15 @@
                     fill: #953f27!important
 
             &:nth-child(1)
-                background: $yellow-three
+                background: $yellow-two
 
 
             &:nth-child(2)
-                background: $yellow-three
+                background: $yellow-two
                 padding-top: 50px
 
             &:nth-child(3)
-                background: $yellow-three
+                background: $yellow-two
                 padding-top: 50px
                 padding-bottom: 80px
 
@@ -458,25 +457,59 @@
 
               > .sponsor-entity
                 text-align: center
-                margin: 10px
+                margin: 10px auto
+                width: 100px
+                height: 100px
+                line-height: 100px
                 @media screen and (min-width: 896px)
-                  margin: 30px
-
-                > a
-                  display: block
-                  margin: 0 auto
+                  margin: 10px 30px
                   width: 150px
                   height: 150px
                   line-height: 150px
-                  @media screen and (min-width: 896px)
-                    width: 200px
-                    height: 200px
-                    line-height: 200px
+
+                > a
+                  display: inline
 
                   > img
                     max-height: 100%
                     max-width: 100%
                     vertical-align: middle
+
+              > .prata
+                width: 125px
+                height: 125px
+                line-height: 125px
+                @media screen and (min-width: 896px)
+                  width: 187px
+                  height: 187px
+                  line-height: 187px
+
+              > .ouro
+                width: 156px
+                height: 156px
+                line-height: 156px
+                @media screen and (min-width: 896px)
+                  width: 233px
+                  height: 233px
+                  line-height: 233px
+
+              > .platina
+                width: 195px
+                height: 195px
+                line-height: 195px
+                @media screen and (min-width: 896px)
+                  width: 291px
+                  height: 291px
+                  line-height: 291px
+
+              > .diamante
+                width: 243px
+                height: 243px
+                line-height: 243px
+                @media screen and (min-width: 896px)
+                  width: 363px
+                  height: 363px
+                  line-height: 363px
 
         .partners
           padding-top: 50px
@@ -492,6 +525,171 @@
             width: 230px
             @media screen and (min-width: 550px)
                 width: 500px
+
+.cityguide
+    background: $yellow-three
+    padding-bottom: 0
+
+    & > .cloud
+        width: 100%
+        min-height: 600px
+        position: absolute
+        opacity: .3
+
+    &:before
+        background: $yellow-three
+
+    h2
+        &:after
+            background-color: $orange-two
+
+    h3
+        text-align: center
+        font-size: 24px
+        color: $blue-two
+        margin-bottom: 8px
+
+        &:after
+            background-color: $orange-two
+
+    .cityguide-section
+        h3
+            text-align: center
+            font-size: 36px
+            color: $blue-two
+            margin-bottom: 8px
+            &:after
+                background-color: $orange-two
+
+    .hotel
+        display: block
+        padding: 15px 60px 55px
+
+        @media screen and (min-width: 720px)
+            display: grid
+            padding: 15px 60px 55px
+            align-items: center
+            grid-column-gap: 30px
+
+        img
+            max-width: 180px
+            max-height: 180px
+            background-size: contain
+            background-position: center center
+            position: relative
+            float: right
+
+        & > .content
+            text-align: center
+
+
+            @media screen and (min-width: 720px)
+                text-align: left
+            & > h3
+                font-size: 34px
+                font-weight: bold
+                margin-bottom: 0px
+                color: $blue-two
+
+            & > h4
+                font-size: 24px
+                font-weight: bold
+                margin-bottom: 0px
+                color: $blue-two
+
+            & > *
+                color: $blue-two
+                font-size: 14px
+                font-family: Roboto
+                padding: 8px
+                & > code
+                    font-family: "Lucida Console"
+
+                & > a
+                    color: $blue-two
+                    font-size: 14px
+                    text-decoration: none
+
+                    &:hover
+                        text-decoration: underline
+
+            & > table
+                border-radius: 3px
+                border-collapse: collapse
+                max-width: 600px
+                padding: 5px
+                margin: 5px
+
+                & > thead > tr > th
+                    color: $gray-one
+                    background: $black
+                    border-bottom: 4px solid #9ea7af
+                    border-right: 1px solid #343a45
+                    font-size: 16px
+                    font-weight: 100
+                    padding: 8px 20px
+                    text-align: left
+                    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+                    vertical-align: middle
+
+                    &:first-child
+                        border-top-left-radius: 6px
+
+                    &:last-child
+                        border-top-right-radius: 6px
+                        border-right: none
+
+                & > tbody > tr
+                    border-top: 1px solid #C1C3D1
+                    border-bottom-: 1px solid #C1C3D1
+                    color: #666B85
+                    font-size: 16px
+                    font-weight: normal
+                    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1)
+
+                    & > td
+                        background: #FFFFFF
+                        padding: 8px 20px
+                        text-align: left
+                        vertical-align: middle
+                        font-weight: 300
+                        font-size: 14px
+                        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1)
+                        border-right: 1px solid #C1C3D1
+
+                        &:first-child
+                            border-bottom-left-radius: 6px
+                        &:last-child
+                            border-bottom-right-radius: 6px
+
+        &:nth-child(even)
+            grid-template-columns: 100px auto 0
+
+            @media screen and (min-width: 720px)
+                grid-template-columns: 180px auto 5%
+
+            @media screen and (min-width: 1024px)
+                grid-template-columns: 280px auto 15%
+
+        &:nth-child(odd)
+            grid-template-columns: 0 auto 100px
+
+            @media screen and (min-width: 720px)
+                grid-template-columns: 5% auto 180px
+
+            @media screen and (min-width: 1024px)
+                grid-template-columns: 15% auto 280px
+
+            & > .content
+                grid-column: 2
+                grid-row: 1
+                @media screen and (min-width: 720px)
+                    text-align: right
+
+            & > .photo
+                grid-column: 3
+                grid-row: 1
+
 
 .footer
     background: $black

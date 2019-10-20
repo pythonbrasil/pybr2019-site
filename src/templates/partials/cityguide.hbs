@@ -1,0 +1,17 @@
+<div class="rounded cityguide" id="section-cityguide">
+    <h2> Guia da Cidade </h2>
+    <div class="cityguide-section" id="section-cityguides">
+        <h3> Onde ficar </h3>
+        {{#each hotels}}
+            <div class="hotel">
+                <a href="{{ meta.href }}" target="_blank">
+                    <img src="/assets/images/hotels/{{meta.photo}}" alt="{{meta.name}}">
+                </a>
+                <div class="content">
+                    {{{ html }}}
+                </div>
+
+            </div>
+        {{/each}}
+    </div>
+</div>

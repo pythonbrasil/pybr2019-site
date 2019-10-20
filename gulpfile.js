@@ -22,7 +22,7 @@ const loadData = (folderPath, objectPaths = []) => {
             let paths = [...objectPaths, file.replace('.js', '')]
             set(data, paths, require(`${process.cwd()}/${folderPath}/${file}`));
         } else {
-            const conv = new Converter({metadata: true});
+            const conv = new Converter({ metadata: true, tables: true, openLinksInNewWindow: true });
             let paths = [...objectPaths, file.replace('.md', '')]
 
             set(data, paths, {
@@ -32,7 +32,6 @@ const loadData = (folderPath, objectPaths = []) => {
                 meta: conv.getMetadata(),
             });
         }
-
     });
 }
 
@@ -46,23 +45,22 @@ gulpStatic({
     customWatchers: [
         { files: './src/content/**/*', tasks: ['content', 'handlebars'] }
     ],
-    move: [
-      {
-        input: './CNAME',
-        output: './dist'
-      },
-      {
-        input: './pdfs/**/*',
-        output: './dist/assets/pdfs/'
-      },
-      {
-        input: './src/submissao-de-palestras',
-        output: './dist/'
-      },
-      {
-        input: './src/grade/**/*',
-        output: './dist/grade/'
-      }
+    move: [{
+            input: './CNAME',
+            output: './dist'
+        },
+        {
+            input: './pdfs/**/*',
+            output: './dist/assets/pdfs/'
+        },
+        {
+            input: './src/submissao-de-palestras',
+            output: './dist/'
+        },
+        {
+            input: './src/grade/**/*',
+            output: './dist/grade/'
+        }
     ],
     css: {
         input: './src/sass/index.sass',
@@ -70,18 +68,16 @@ gulpStatic({
         watch: './src/sass/**/*',
     },
     hbs: {
-        batch : ['./src/templates/partials'],
-        watch : './src/templates/**/*',
-        multiple: [
-            {
-                data: data,
-                input: './src/templates/index.hbs',
-                output: {
-                    dir: './dist',
-                    name: 'index.html',
-                }
+        batch: ['./src/templates/partials'],
+        watch: './src/templates/**/*',
+        multiple: [{
+            data: data,
+            input: './src/templates/index.hbs',
+            output: {
+                dir: './dist',
+                name: 'index.html',
             }
-        ]
+        }]
     },
     img: {
         input: './src/images/**/*',
@@ -90,7 +86,7 @@ gulpStatic({
             interlaced: true,
             progressive: true,
             optimizationLevel: 5,
-            svgoPlugins: [{removeViewBox: true}]
+            svgoPlugins: [{ removeViewBox: true }]
         }
     },
     scripts: {

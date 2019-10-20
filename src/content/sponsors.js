@@ -16,7 +16,7 @@ module.exports = {
             {
                 type: 'platina',
                 items: [
-                    Entity('PSF', 'psf-logo-narrow-256x84-alpha.png', 'https://www.python.org/psf'),
+                    Entity('PSF', 'PSF-Logo-Narrow-Shapes.svg', 'https://www.python.org/psf'),
                     Entity('GrupoZAP', 'grupozap.png', 'https://www.grupozap.com'),
                 ],
             },
@@ -34,6 +34,7 @@ module.exports = {
                 items: [
                     Entity('Evolux', 'logo-evolux.svg', 'https://www.evolux.net.br'),
                     Entity('Lab Codes', 'labcodes.png', 'https://labcodes.com.br/'),
+                    Entity('WhatsGood', 'whatsgood.png', 'https://whatsgood.com.br'),
                 ],
             },
             {
@@ -49,7 +50,8 @@ module.exports = {
         title: 'Parceiros',
         items: [
           Entity('associação python brasil', 'apyb.png', 'https://python.org.br/'),
-          Entity('USP', 'usp.png', 'https://www5.usp.br/')
+          Entity('USP', 'usp.png', 'https://www5.usp.br/'),
+          Entity('Estácio de Sá', 'estacio.png', 'http://portal.estacio.br')
         ]
       }
     ],
