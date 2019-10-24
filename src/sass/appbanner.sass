@@ -1,0 +1,47 @@
+.app-banners-container
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  z-index: 2
+  width: 100%
+  .app-banners
+    padding: 10px
+    background-color: $orange
+    color: white
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    p
+      margin: 0
+      font-size: 16px
+
+    @media (min-width: 1024px)
+      text-align: center
+      flex-wrap: nowrap
+      padding: 10px 30px
+      border-radius: 50px
+
+    .stores-banners
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      @media (min-width: 1024px)
+        flex-wrap: nowrap
+        padding-left: 20px
+      
+      img
+        display: block
+        width: 150px
+        @media(min-width: 1024px)
+          width: 200px
+
+        height: auto
+        flex: 1
+        &.apple
+          width: 120px
+          @media(min-width: 1024px)
+            width: 165px
+        
