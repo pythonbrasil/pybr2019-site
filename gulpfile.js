@@ -63,7 +63,7 @@ gulpStatic({
         }
     ],
     css: {
-        input: './src/sass/index.sass',
+        input: './src/sass/style.sass',
         output: './dist/assets/css',
         watch: './src/sass/**/*',
     },
